@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% if user.is_authenticated %}
+    
+    <div class="sidebar-nav-fixed affix">
+      <div class="well">
+        <form method="GET" name="get_form" action="">
+          <select name="sort", id="sort">
+            <option value="-publish" {% if sort == '-publish' %}selected{% endif %}>Дата(по убыванию)</option>
+            <option value="publish" {% if sort == 'publish' %}selected{% endif %}>Дата(по возрастанию)</option>
+            <option value="-favourite" {% if sort == '-favourite' %}selected{% endif %}>Избранное</option>
+            <option value="category" {% if sort == 'category' %}selected{% endif %}>Категории</option>
+          </select>
+
+          <p><input type="radio" name="filter" value="all">Все</p>
+          <p><input type="radio" name="filter" value="favourite">Избранные</p>
+          {% for obj in cat_list %}
+            <p><input type="radio" name="filter" value="c{{ obj }}">{{ obj }}</p>
+          {% endfor %}
+          {% for obj in date_list %}
+            <p><input type="radio" name="filter" value="{{ obj|date:"Y-m-d" }}">{{ obj }}</p>
+          {% endfor %}
+
+          <input type="text" name="query" placeholder="Поиск заметки" value="{{ request.GET.query }}"/>
+          <input type="submit" value="Поиск">
+        </form>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-sm-offset-3">
+      {% if object_list|length > 0 %}
+        {% for obj in object_list %}
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+              {% if obj.image %}
+                <img src="{{ obj.image.url }}" class="img-responsive"/>
+              {% endif %}
+              <div class="caption">
+                <h3><a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></h3>
+                <p>{{ obj.content|linebreaks|truncatechars:120 }}</p>
+                <small>{{ obj.publish }}</small>
+                <p>Категория: {{ obj.category }}</p>
+                {% if obj.favourite %}
+                  <p>Избранное</p><br>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+        {% endfor %}
+
+        <div class="pagination">
+            <span class="step-links">
+                {% if object_list.has_previous %}
+                    <a href="?{{ page_request_var }}={{ object_list.previous_page_number }}{% if request.GET.query %}&query={{ request.GET.query }}{% endif %}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+                </span>
+
+                {% if object_list.has_next %}
+                    <a href="?{{ page_request_var }}={{ object_list.next_page_number }}{% if request.GET.query %}&query={{ request.GET.query }}{% endif %}">next</a>
+                {% endif %}
+            </span>
+        </div>
+      {% else %}
+        <p>Заметки не найдены</p>
+      {% endif %}
+
+      {% else %}
+        <div class="col-sm-12">
+          <p>Войдите или зарегистрируйтесь, чтобы увидеть свои заметки.</p>
+        </div>
+      {% endif %}
+
+    </div>
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('#sort').change(function() {
+      $.ajax({
+        type: "GET",
+        url: "/posts/post_list",
+        data: {
+          'sort' : $('#sort').val(),
+          'object_list' : $('')
+        },
+        success: sortSuccsess,
+        dataType: 'html'
+      }),
+    });
+
+  });
+
+  $(function(){
+
+    $('#filter').change(function() {
+      $.ajax({
+        type: "GET",
+        url: "/posts/post_list",
+        data: {
+          'filter' : $('#filter').val(),
+        },
+        success: sortSuccsess,
+        dataType: 'html'
+      }),
+    });
+
+  });
+
+  function sortSuccess(data, sextStatus, jqXHR)
+  {
+    $('#object_list').html(data)
+  }
+
+</script>
+
+{% endblock content %}

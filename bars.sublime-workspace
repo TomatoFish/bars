@@ -3,23 +3,217 @@
 	{
 		"selected_items":
 		[
+			[
+				"up",
+				"update	function"
+			],
+			[
+				"for",
+				"for	Attr"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"s",
+				"save"
+			],
+			[
+				"query",
+				"queryset"
+			],
+			[
+				"auto",
+				"auto_now_add"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"AUTH",
+				"AUTH_PROFILE_MODULE"
+			],
+			[
+				"create",
+				"create_slug	param"
+			],
+			[
+				"crea",
+				"create_slug"
+			],
+			[
+				"slug",
+				"slugify"
+			],
+			[
+				"pre",
+				"pre_seve_post_receiver"
+			],
+			[
+				"co",
+				"connect	function"
+			],
+			[
+				"uni",
+				"unique"
+			],
+			[
+				"MED",
+				"MEDIA_URL"
+			],
+			[
+				"upd",
+				"updated"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"po",
+				"post_list"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"Htt",
+				"HttpResponseRedirect	class"
+			],
+			[
+				"c",
+				"context	get_context_data"
+			],
+			[
+				"PO",
+				"Post"
+			],
+			[
+				"Pos",
+				"PostForm	class"
+			],
+			[
+				"Model",
+				"ModelForm	ModelForm"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"post",
+				"post_detail"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "from __future__ import unicode_literals\n\nfrom django.db import models\n\n# Create your models here.\n\nclass posts(models.Model):\n	",
 			"file": "bars/posts/models.py",
-			"file_size": 126,
-			"file_write_time": 131049620478259932,
 			"settings":
 			{
-				"buffer_size": 127,
+				"buffer_size": 1982,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bars/posts/forms.py",
+			"settings":
+			{
+				"buffer_size": 259,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/posts/views.py",
+			"settings":
+			{
+				"buffer_size": 3835,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bars/posts/urls.py",
+			"settings":
+			{
+				"buffer_size": 640,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 1304,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/user_create.http",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/post_form.html",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/log_in.html",
+			"settings":
+			{
+				"buffer_size": 651,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/log_out.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/post_detail.html",
+			"settings":
+			{
+				"buffer_size": 434,
+				"line_ending": "Windows",
+				"name": "<html>"
+			}
+		},
+		{
+			"file": "bars/templates/post_list.html",
+			"settings":
+			{
+				"buffer_size": 1524,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bars/templates/messages_display.html",
+			"settings":
+			{
+				"buffer_size": 254,
+				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -42,10 +236,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 364.0,
-		"last_filter": "insta",
+		"height": 400.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -59,7 +269,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 324.0
+		"width": 408.0
 	},
 	"console":
 	{
@@ -82,20 +292,45 @@
 	[
 		"/C/Users/tomat/Desktop/bars",
 		"/C/Users/tomat/Desktop/bars/bars",
+		"/C/Users/tomat/Desktop/bars/bars/bars",
 		"/C/Users/tomat/Desktop/bars/bars/posts"
 	],
 	"file_history":
 	[
+		"/C/Users/tomat/Desktop/bars/bars/bars/settings.py",
+		"/C/Users/tomat/Desktop/gos-master/PCT/1_set_mandelbrot/main.c",
+		"/C/Users/tomat/Desktop/gos-master/programm/3_/task3.c",
+		"/C/Users/tomat/Desktop/gos-master/programm/1_/task1.c",
+		"/C/Users/tomat/Desktop/моделирование/lab2py/lab2py/lab2py.py",
+		"/C/Users/tomat/Desktop/bars-python/decimalRound/decimalRound/decimalRound.py",
+		"/C/Users/tomat/Desktop/моделирование/lab1/lab1/lab1.py",
+		"/C/Users/tomat/Desktop/моделирование/Modelir/lab2.c",
+		"/C/Users/tomat/OneDrive/lab3.cpp",
+		"/C/Users/tomat/Desktop/bars/bars/bars/urls.py",
+		"/C/Users/tomat/Desktop/bars/bars/static/css/base.css",
+		"/C/Users/tomat/Desktop/lab2.py",
+		"/C/Users/tomat/Desktop/bars/bars/posts/migrations/0001_initial.py",
+		"/C/Users/tomat/Desktop/bars/bars/posts/urls.py",
+		"/C/Users/tomat/Desktop/bars/bars/templates/index.html",
+		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/C/Users/tomat/Desktop/bars/Lib/site-packages/django/contrib/gis/gdal/geomtype.py",
+		"/C/Users/tomat/Desktop/bars-python/google-python-exercises/regular.py",
 		"/C/Users/tomat/Desktop/crosses/client.py",
+		"/C/Users/tomat/OneDrive/lab3.c",
+		"/C/Users/tomat/Desktop/2gistest/2gistest.py",
+		"/C/Users/tomat/Desktop/bars-python/google-python-exercises/regex1.py",
+		"/C/Program Files (x86)/JetBrains/PyCharm 2016.1.2/bin/pycharm.exe.vmoptions",
+		"/C/Users/tomat/Desktop/mpi_barrie/coll.c",
 		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
 		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
-		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/tomat/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Default (Windows).sublime-keymap",
 		"/C/Users/tomat/Desktop/bars-python/FlaskNew/FlaskNew/FlaskNew.py"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -135,15 +370,45 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 127,
+						"buffer_size": 1982,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								127,
-								127
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bars/posts/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								206
 							]
 						],
 						"settings":
@@ -154,7 +419,299 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bars/posts/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1138,
+								1138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bars/posts/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "bars/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								934,
+								934
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bars/templates/user_create.http",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "bars/templates/post_form.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "bars/templates/log_in.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "bars/templates/log_out.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "bars/templates/post_detail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<html>",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "bars/templates/post_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "bars/templates/messages_display.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -166,7 +723,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -193,7 +750,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 156.0
+		"height": 159.0
 	},
 	"output.find_results":
 	{
