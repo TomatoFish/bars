@@ -8,10 +8,12 @@ from .views import (
     post_create,
     post_detail,
     post_update,
-    post_delete
+    post_delete,
+    filter_list
 )
 
 urlpatterns = [
+    url(r'^notes/filters/$', filter_list),
     url(r'^$', post_list, name='list'),
     url(r'^post/create/$', post_create),  # костыль
     url(ur'^(?P<id>[\w]+)$', post_detail, name='detail'),
